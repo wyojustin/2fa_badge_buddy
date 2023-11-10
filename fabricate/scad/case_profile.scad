@@ -20,8 +20,8 @@ h = 50;
 module case(){
 color("grey")translate([0, 0, -2.5])rotate([-90, 0, 180]){
     difference(){
-      linear_extrude(height=case_height)import("../inkscape/case_profile.svg");
-      //translate([0, 0, 1])scale([.975,.8,2])linear_extrude(height=case_height)import("../inkscape/case_profile.svg");
+      linear_extrude(height=case_height)import("../svgs/case_profile.svg");
+      //translate([0, 0, 1])scale([.975,.8,2])linear_extrude(height=case_height)import("../svgs/case_profile.svg");
     }
     translate([0, -9.5, 93-5-.5])linear_extrude(height=5.5)trapazoid(26, 30, 5);
     translate([-63/2+3, -4.5, -6.25 ])cube([57, .7, 29.5]);

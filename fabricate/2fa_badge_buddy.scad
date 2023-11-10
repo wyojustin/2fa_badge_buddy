@@ -32,7 +32,7 @@ module id_block(){
 
 module clip(height){
   color("red")rotate([90, 0, 0])linear_extrude(height=height)
-    import("inkscape/clip.svg");
+    import("svgs/clip.svg");
 }
 
 module id_holder(){
@@ -157,14 +157,14 @@ module lanyard_attachment(){
 
 //case();
 ///// part 1
-/*
 holders();
 top();
-*/
 //// part 2
+translate([0, -1, 0])
 lanyard_attachment();
-// part 2
-//backpack();
+
+// part 3
+translate([70, 0, 5])rotate([0, 180, 0])backpack();
 
 
 
